@@ -104,7 +104,8 @@ function Game() {
                 )}
                 <div className="score h4" style={{textShadow: "1px 1px #000000"}}>Puntuación: {score}</div>
               </>
-            ) : (
+            ) : {/* Este es la card que sale cuando el jugador pierde*/}
+            (
               <div className="alert">
                 <p className="text-white  h2">Se acabaron tus oportunidades, has perdido.</p>
                 <Button onClick={handleReset} className="m-2 ">
